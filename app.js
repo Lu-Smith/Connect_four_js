@@ -76,6 +76,7 @@ const winningArrayes = [ [0, 1, 2, 3],
 [12, 19, 26, 33],
 [13, 20, 27, 34],]
 
+
 function checkBoard() {
   for (let y = 0; y < winningArrayes.length; y++) {
      const square1 = squares[winningArrayes[y][0]];
@@ -113,14 +114,16 @@ for (let i = 0; i < squares.length; i++) {
             squares[i].classList.add('player-one');
             currentPlayer = 2;
             displayCurrentPlayer.innerHTML = currentPlayer;
+            result.innerHTML = "";
         } else if (currentPlayer == 2) {
             squares[i].classList.add('taken');
             squares[i].classList.add('player-two');
             currentPlayer = 1;
             displayCurrentPlayer.innerHTML = currentPlayer;
+            result.innerHTML = "";
         } 
     } else 
-    alert('can not go here');
+    result.innerHTML = "can't go there";
     checkBoard();
 }
 }
