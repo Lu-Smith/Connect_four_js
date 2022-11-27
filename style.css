@@ -87,7 +87,11 @@ button:hover::before, button:focus::before {
     left: -6px;
     bottom: -6px;
     right: -6px;
-  }
+ }
+
+ .play-again {
+    display: none;
+ }
 
 footer a {
     display: inline-flex;
