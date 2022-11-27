@@ -41,3 +41,17 @@ h3 {
     background-color: rgb(16, 238, 134);
     border-radius: 10px;
 }
+
+footer a {
+    display: inline-flex;
+    text-decoration: none;
+    color: #f1a86d;
+    transition: all 200ms ease-in-out;
+    margin: 100px 0 30px 0;
+}
+
+footer a:hover {
+    color: #f08126;
+    transform: translateY(-5px);
+    
+}
