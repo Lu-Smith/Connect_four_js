@@ -4,6 +4,7 @@ const squares = document.querySelectorAll('.grid div');
 const result = document.querySelector('#result');
 const displayCurrentPlayer = document.querySelector('#current-player');
 const playerColour = document.querySelector('#player-colour');
+const playerNumber = document.querySelector('#player-number');
 
 let currentPlayer = 1;
 
@@ -95,6 +96,7 @@ function checkBoard() {
         result.innerHTML = 'Player 1 wins 🥳';
         result.classList.add('red');
         playerColour.classList.remove('green');
+        playerNumber.textContent = 'Game Over';
         }  
         // check the squares to see if they have the class of player-one
         if (
@@ -106,6 +108,7 @@ function checkBoard() {
         result.innerHTML = 'Player 2 wins 🥳';
         result.classList.add('green');
         playerColour.classList.remove('red');
+        playerNumber.textContent = 'Game Over';
         }
     }
 }
