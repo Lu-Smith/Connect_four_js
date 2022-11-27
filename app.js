@@ -79,6 +79,12 @@ const winningArrayes = [ [0, 1, 2, 3],
 [12, 19, 26, 33],
 [13, 20, 27, 34],]
 
+function playAgain() {
+    location.reload();
+    return false;
+}
+
+playerAgain.addEventListener('click', playAgain);
 
 function checkBoard() {
   for (let y = 0; y < winningArrayes.length; y++) {
