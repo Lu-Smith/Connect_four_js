@@ -3,3 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.grid {
+    border: 1px solid red;
+    height: 282px;
+    width: 282px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid div {
+    height: 40px;
+    width: 40px;
+    background-color: bisque;
+
+}
