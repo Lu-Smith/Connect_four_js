@@ -11,6 +11,13 @@ body {
     text-align: center;
 }
 
+h1 {
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
 .grid {
     border: 1px solid red;
     height: 242px;
