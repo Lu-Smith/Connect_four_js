@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const squares = document.querySelectorAll('.grid div');
 const result = document.querySelector('#result');
 const displayCurrentPlayer = document.querySelector('#current-player');
+const playerColour = document.querySelector('#player-colour');
 
 let currentPlayer = 1;
 
@@ -92,6 +93,8 @@ function checkBoard() {
         square4.classList.contains('player-one') 
         ) {
         result.innerHTML = 'Player 1 wins 🥳';
+        result.classList.add('red');
+        playerColour.classList.remove('green');
         }  
         // check the squares to see if they have the class of player-one
         if (
@@ -101,6 +104,8 @@ function checkBoard() {
         square4.classList.contains('player-two') 
         ) {
         result.innerHTML = 'Player 2 wins 🥳';
+        result.classList.add('green');
+        playerColour.classList.remove('red');
         }
     }
 }
@@ -115,12 +120,16 @@ for (let i = 0; i < squares.length; i++) {
             currentPlayer = 2;
             displayCurrentPlayer.innerHTML = currentPlayer;
             result.innerHTML = "";
+            playerColour.classList.add('green');
+            playerColour.classList.remove('red');
         } else if (currentPlayer == 2) {
             squares[i].classList.add('taken');
             squares[i].classList.add('player-two');
             currentPlayer = 1;
             displayCurrentPlayer.innerHTML = currentPlayer;
             result.innerHTML = "";
+            playerColour.classList.add('red');
+            playerColour.classList.remove('green');
         } 
     } else 
     result.innerHTML = "can't go there";

@@ -24,6 +24,10 @@ h3 {
     line-height: 25px;
 }
 
+main {
+    height: 60vh;
+}
+
 h4 {
     margin: 20px 0;
     font-size: 20px;
@@ -60,11 +64,18 @@ footer a {
     text-decoration: none;
     color: #f1a86d;
     transition: all 200ms ease-in-out;
-    margin: 100px 0 30px 0;
 }
 
 footer a:hover {
     color: #f08126;
     transform: translateY(-5px);
     
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: rgb(16, 238, 134);
 }
