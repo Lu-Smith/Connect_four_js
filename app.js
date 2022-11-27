@@ -15,9 +15,15 @@ for (let i = 0; i < squares.length; i++) {
             squares[i].classList.add('player-one');
             currentPlayer = 2;
             displayCurrentPlayer.innerHTML = currentPlayer;
-        }
-    }
-    }
+        } else if (currentPlayer == 2) {
+            squares[i].classList.add('taken');
+            squares[i].classList.add('player-two');
+            currentPlayer = 1;
+            displayCurrentPlayer.innerHTML = currentPlayer;
+        } 
+    } else 
+    alert('can not go here');
+}
 }
 
 
