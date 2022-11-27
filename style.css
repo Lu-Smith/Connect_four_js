@@ -59,6 +59,36 @@ h4 {
     border-radius: 10px;
 }
 
+button {
+    padding: 15px 20px;
+    border: none;
+    font-size: 20px;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    background-color: red;
+    color: white;
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  border: 2px solid red;
+}
+
+button:hover::before, button:focus::before {
+    top: -6px;
+    left: -6px;
+    bottom: -6px;
+    right: -6px;
+  }
+
 footer a {
     display: inline-flex;
     text-decoration: none;
